@@ -6,7 +6,7 @@ This project contains Smush.It task to [Phing](http://phing.info) build tool for
 
 Defines a Phing task to run the [Smush.it](http://www.smushit.com/ysmush.it/) compressor against a set of image files.
 
-To setup, put SmushitCompressorTask.php under Phing `tasks/ext`:
+To setup, put `SmushitCompressorTask.php` under Phing `tasks/ext`:
 
 To use this task, include it with a taskdef tag in your build.xml file:
 
@@ -26,7 +26,7 @@ The task is now ready to be used:
     </target>
 
 This task makes use of [smushit](https://github.com/davgothic/SmushIt) by
-GitHub user [davgothic](https://github.com/davgothic).
+GitHub user [davgothic](https://github.com/davgothic), make sure it is in php `include_path`.
 
 ### Task Attributes
 
@@ -36,3 +36,7 @@ GitHub user [davgothic](https://github.com/davgothic).
 #### Optional
 _There are no optional attributes for this task._
 
+
+### TODO
+
+ - add option to skip saving filetype changes
